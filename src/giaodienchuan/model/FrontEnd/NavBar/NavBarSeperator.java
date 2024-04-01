@@ -8,7 +8,7 @@ public class NavBarSeperator extends NavBarItem {
     
     public NavBarSeperator(Rectangle rec) {
         super(rec, "");
-        setBackground(new Color(150, 150, 150));
+        setBackground(new Color(0, 128, 128));
     }
     
 }

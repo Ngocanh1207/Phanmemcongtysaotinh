@@ -14,8 +14,8 @@ public class NavBarItem extends JPanel {
     public String text;
 
     public NavBarItem(Rectangle rec, String text) {        
-        this.bgDefault = new Color(35, 35, 35);
-        this.colorDefault = new Color(150, 150, 150);
+        this.bgDefault = new Color(0, 105, 148);
+        this.colorDefault = new Color(255, 255, 255);
         this.text = text;
         
         setLayout(null);

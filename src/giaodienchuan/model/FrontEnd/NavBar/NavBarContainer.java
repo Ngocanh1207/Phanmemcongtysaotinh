@@ -15,7 +15,7 @@ public class NavBarContainer extends JPanel {
         setLayout(null);
         setBounds(rec);
         setPreferredSize(new Dimension(rec.width, rec.height));
-        setBackground(new Color(35, 35, 35));
+        setBackground(new Color(0, 128, 128));
     }
 
     public void addItem(NavBarItem item, Boolean fullWidth) {

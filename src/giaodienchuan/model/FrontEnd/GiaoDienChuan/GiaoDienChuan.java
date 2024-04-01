@@ -128,13 +128,13 @@ public class GiaoDienChuan extends JFrame implements MouseListener {
         scrollMenu.getVerticalScrollBar().setUnitIncrement(5);
 
         // ================ Header ===================
-        int headerBg = 30;
-        int headerH = 55;
+        int headerBg = 100;
+        int headerH = 50;
         header = new NavBarContainer(new Rectangle(0, 0, WIDTH, headerH));
         header.setBackground(new Color(headerBg, headerBg, headerBg));
 
-        headerTitle = new NavBarTitle(new Rectangle((WIDTH - 400) / 2, 0, 400, headerH), "QUẢN LÝ BÁN HÀNG ĐIỆN THOẠI");
-        headerTitle.setColorDefault(new Color(200, 200, 200));
+        headerTitle = new NavBarTitle(new Rectangle((WIDTH - 600) / 2, 0, 600, headerH), "PHẦN MỀM BÁN HÀNG TẠI CÔNG TY TNHH SAO TINH");
+        headerTitle.setColorDefault(new Color(255, 255, 0));
         headerTitle.setBgDefault(new Color(headerBg, headerBg, headerBg));
         headerTitle.setFontSize(23);
         header.addItem(headerTitle, false);
@@ -164,7 +164,7 @@ public class GiaoDienChuan extends JFrame implements MouseListener {
         NavBarButton btnMinimize = new NavBarButton(new Rectangle(WIDTH - btnWidth * 2, 0, btnWidth, headerH), "", "icons8_angle_down_30px.png");
         btnMinimize.setIconLocation(new Rectangle((btnWidth - iconSize) / 2, (headerH - iconSize) / 2, iconSize, iconSize));
         btnMinimize.setBgDefault(new Color(headerBg, headerBg, headerBg));
-        btnMinimize.setBgHover(new Color(49, 49, 49));
+        btnMinimize.setBgHover(new Color(200, 200, 200));
         btnMinimize.setToolTipText("Thu nhỏ");
         btnMinimize.addMouseListener(new MouseAdapter() {
             @Override
@@ -196,7 +196,7 @@ public class GiaoDienChuan extends JFrame implements MouseListener {
             NavBarButton btnSettingUser = new NavBarButton(new Rectangle(menuW - btnWidth, 0, btnWidth, headerH), "", "icons8_settings_30px_1.png");
             btnSettingUser.setIconLocation(new Rectangle((btnWidth - iconSize) / 2, (headerH - iconSize) / 2, iconSize, iconSize));
             btnSettingUser.setBgDefault(new Color(headerBg, headerBg, headerBg));
-            btnSettingUser.setBgHover(new Color(49, 49, 49));
+            btnSettingUser.setBgHover(new Color(70, 130, 180));
             btnSettingUser.setToolTipText("Tài khoản");
             btnSettingUser.addMouseListener(new MouseAdapter() {
                 @Override

@@ -16,7 +16,7 @@ public class NavBarButton extends NavBarItem {
 
     public NavBarButton(Rectangle rec, String text, String iconUrl) {
         super(rec, text);
-        this.bgHover = new Color(49, 49, 49);
+        this.bgHover = new Color(0, 128, 128);
         this.colorHover = new Color(255, 255, 255);
 
         // icon
@@ -87,7 +87,7 @@ public class NavBarButton extends NavBarItem {
     public void setActive(Boolean stage) {
         this.actived = stage;
         if (this.actived) {
-            this.setBackground(new Color(20, 20, 20));
+            this.setBackground(new Color(0, 105, 148));
             lbLabel.setForeground(Color.white);
         } else {
             this.setBackground(bgDefault);

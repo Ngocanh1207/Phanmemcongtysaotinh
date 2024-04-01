@@ -39,12 +39,14 @@ public class MyTable extends JPanel {
         tb.setRowHeight(40);
 
         // color
-        int bgColor = 235;
-        int color = 0;
-        tb.getTableHeader().setBackground(new Color(bgColor, bgColor, bgColor));
-        tb.getTableHeader().setForeground(new Color(color, color, color));
-        tb.setBackground(new Color(bgColor, bgColor, bgColor));
-        tb.setForeground(new Color(color, color, color));
+       // color
+        int bgColor = 135; // Giá trị Red
+        int bgGreen = 206; // Giá trị Green
+        int bgBlue = 250; // Giá trị Blue
+ 
+// Thiết lập màu nền cho table header và table
+        tb.getTableHeader().setBackground(new Color(bgColor, bgGreen, bgBlue));
+        tb.setBackground(new Color(bgColor, bgGreen, bgBlue));
 
         tb.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
